@@ -6,8 +6,6 @@ from selenium.webdriver.chrome.service import Service
 from App.pages.OrderPage import OrderPage
 from App.tests.test_login import *
 
-service = Service("C:\\Users\\acer\\Python\\Python312\\chromedriver.exe")
-
 
 class TestOrder(TestLogin):
   

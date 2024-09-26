@@ -18,7 +18,9 @@ class TestLogin(unittest.TestCase):
     
     cls.driver.get("http://localhost:5173/")
   
-  def test_valid_login(self):
+  def test_login_valid(self):
+    self.driver.get("http://localhost:5173/")
+
     driver = self.driver
     login = LoginPage(driver)
     
@@ -30,7 +32,9 @@ class TestLogin(unittest.TestCase):
     
     time.sleep(2)
     
-  def test_invalid(self):
+  def test_not_valid(self):
+    self.driver.get("http://localhost:5173/")
+
     driver = self.driver
     
     login = LoginPage(driver)
